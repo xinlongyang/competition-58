@@ -34,8 +34,9 @@ cd 进入pre-train/pretraining_output 目录，执行 tensorboard --logdir=./ �
 如本机则在浏览器输入：http://127.0.0.1:6006/
 
 loss 图为：
-![image](https://github.com/syzong/images/blob/master/58_pre_train_loss.png)
 ```
+![Alt text](https://github.com/syzong/images/blob/master/58_pre_train_loss.png)
+
 
 - 3.执行 train.sh 开始模型训练，参数自行调整
 
