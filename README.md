@@ -30,12 +30,11 @@ next_sentence_loss = 0.22917493
 ```
 
 ```
-cd 进入pre-train/pretraining_output 目录，执行 tensorboard --logdir=./ ，即可在浏览器中查看训练过程的效果，默认端口6006。 
-如本机则在浏览器输入：http://127.0.0.1:6006/
-
-loss 图为：
+cd 进入pre-train/pretraining_output 目录，执行 tensorboard --logdir=./ 即可查看训练过程。
+在浏览器中打开地址，默认端口6006，如本机则在浏览器输入：http://127.0.0.1:6006/
 ```
-![Alt text](https://github.com/syzong/images/blob/master/58_pre_train_loss.png)
+loss 图为：
+![image](https://github.com/syzong/images/blob/master/58_pre_train_loss.png)
 
 
 - 3.执行 train.sh 开始模型训练，参数自行调整
