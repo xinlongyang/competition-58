@@ -15,10 +15,20 @@ label      | txt
   - vocab                 word字典文件
 
 ## 执行步骤
-- 执行 pre-train-1.sh ，生成 tf_pre_train.tfrecord 文件
-- 执行 pre-train-2.sh ，即可开始预训练模型训练
-- 执行 train.sh 开始模型训练
-- 执行 test.sh 测试模型最终效果，生成的 sub.csv 文件去除第三列概率值即为提交文件
+- 1.执行 pre-train-1.sh ，生成 tf_pre_train.tfrecord 文件
+- 2.执行 pre-train-2.sh ，即可开始预训练模型训练
+
+训练一天最终预训练效果为：
+global_step = 200000
+loss = 1.3791736
+masked_lm_accuracy = 0.744027
+masked_lm_loss = 1.152022
+next_sentence_accuracy = 0.915125
+next_sentence_loss = 0.22917493
+
+
+- 3.执行 train.sh 开始模型训练
+- 4.执行 test.sh 测试模型最终效果，生成的 sub.csv 文件去除第三列概率值即为提交文件
 
 requirements:
 ```
