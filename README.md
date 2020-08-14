@@ -18,6 +18,7 @@ label      | txt
 - 1.执行 pre-train-1.sh ，生成 tf_pre_train.tfrecord 文件
 - 2.执行 pre-train-2.sh ，即可开始预训练模型训练
 
+```
 训练一天最终预训练效果为：
 global_step = 200000
 loss = 1.3791736
@@ -25,6 +26,9 @@ masked_lm_accuracy = 0.744027
 masked_lm_loss = 1.152022
 next_sentence_accuracy = 0.915125
 next_sentence_loss = 0.22917493
+```
+loss 图为：
+![image](https://github.com/syzong/images/blob/master/58_pre_train_loss.png)
 
 
 - 3.执行 train.sh 开始模型训练
