@@ -16,6 +16,7 @@ label      | txt
 
 ## 执行步骤
 - 1.执行 pre-train-1.sh ，生成 tf_pre_train.tfrecord 文件
+
 - 2.执行 pre-train-2.sh ，即可开始预训练模型训练
 
 ```
@@ -27,14 +28,22 @@ masked_lm_loss = 1.152022
 next_sentence_accuracy = 0.915125
 next_sentence_loss = 0.22917493
 ```
+
+```
+cd 进入pre-train/pretraining_output 目录，执行 tensorboard --logdir=./ ，即可在浏览器中查看训练过程的效果，默认端口6006。 
+如本机则在浏览器输入：http://127.0.0.1:6006/
+
 loss 图为：
 ![image](https://github.com/syzong/images/blob/master/58_pre_train_loss.png)
+```
 
+- 3.执行 train.sh 开始模型训练，参数自行调整
 
-- 3.执行 train.sh 开始模型训练
 - 4.执行 test.sh 测试模型最终效果，生成的 sub.csv 文件去除第三列概率值即为提交文件
 
-requirements:
+
+
+## requirements:
 ```
 tensorflow >= 1.11.0   # CPU Version of TensorFlow.
 tensorflow-gpu  >= 1.11.0  # GPU version of TensorFlow.
