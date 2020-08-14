@@ -2,18 +2,21 @@
 
 ## 数据说明
 - 上传的数据为部分数据，全量数据自行下载。 https://tech.58.com/game/problemDesc?contestId=1&token=58tech
+
 - data 目录下为最终要训练的数据和测试数据
-格式为两列：保准问ID 和 用户问句 ，中间使用 \t 隔开
+格式为两列：标准问ID 和 用户问句 ，中间使用 \t 隔开
 
 label      | txt 
 ---------- | :-------------:
 1014       | 190 26 6 7 154 41 6 7 17 117 8 43 40 153 313
 364        | 0 43 40 60 63 139 44 211 26
 
+
 - pre-train 目录下为预训练使用数据，包含文件有：
   - pre_train_data        预训练语料
   - bert_config.json      bert模型配置
   - vocab                 word字典文件
+
 
 ## 执行步骤
 - 1.执行 pre-train-1.sh ，生成 tf_pre_train.tfrecord 文件
