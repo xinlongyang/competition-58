@@ -313,7 +313,7 @@ def main(_):
             print("\n")
             test_acc, test_recall, test_prec, test_f_beta = get_multi_metrics(pred_y=test_predictions_all, true_y=label_ids_all, labels=label_list)
 
-            print("Test:  loss: %.4f, acc: %.4f, auc: %.4f, recall: %.4f, precision: %.4f, f_beta: %.4f"
+            print("Test:  loss: %.4f, acc: %.4f, recall: %.4f, precision: %.4f, f_beta: %.4f"
                         %(mean(test_losses), test_acc, test_recall, test_prec, test_f_beta))
             print("\n")
             ext_id = 0
