@@ -46,7 +46,7 @@ loss 图为：
 - 4.执行 test.sh 测试模型最终效果，生成的 sub.csv 文件去除第三列概率值即为提交文件
 
 ## 最终比赛成绩TOP 7
-![image](https://github.com/syzong/images/blob/master/58-score.png)
+![image](https://github.com/syzong/images/blob/master/58-scoreB.png)
 
 
 ## requirements:
