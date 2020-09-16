@@ -1,4 +1,4 @@
-#  BERT    PreTrain & Fine-tune
+#  BERT   文本分类、意图识别 PreTrain & Fine-tune
 
 ## 数据说明
 - 上传的数据为部分数据，全量数据自行下载。 https://tech.58.com/game/problemDesc?contestId=1&token=58tech
